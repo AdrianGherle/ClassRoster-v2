@@ -10,9 +10,12 @@
 		8B54E00F19AD8AB800E690D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B54E00E19AD8AB800E690D4 /* AppDelegate.swift */; };
 		8B54E01219AD8AB800E690D4 /* ClassRoster_v2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8B54E01019AD8AB800E690D4 /* ClassRoster_v2.xcdatamodeld */; };
 		8B54E01419AD8AB800E690D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B54E01319AD8AB800E690D4 /* ViewController.swift */; };
-		8B54E01719AD8AB800E690D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B54E01519AD8AB800E690D4 /* Main.storyboard */; };
 		8B54E01919AD8AB800E690D4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B54E01819AD8AB800E690D4 /* Images.xcassets */; };
 		8B54E02519AD8AB800E690D4 /* ClassRoster_v2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B54E02419AD8AB800E690D4 /* ClassRoster_v2Tests.swift */; };
+		8B54E02F19AD8C4900E690D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B54E02E19AD8C4900E690D4 /* Main.storyboard */; };
+		8B54E03519AE9CEA00E690D4 /* AddNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B54E03419AE9CEA00E690D4 /* AddNewViewController.swift */; };
+		8BC283B419B3E30F006F2FBE /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC283B319B3E30F006F2FBE /* Person.swift */; };
+		8BC283B619B3E520006F2FBE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC283B519B3E520006F2FBE /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,11 +34,14 @@
 		8B54E00E19AD8AB800E690D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B54E01119AD8AB800E690D4 /* ClassRoster_v2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ClassRoster_v2.xcdatamodel; sourceTree = "<group>"; };
 		8B54E01319AD8AB800E690D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8B54E01619AD8AB800E690D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8B54E01819AD8AB800E690D4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8B54E01E19AD8AB800E690D4 /* ClassRoster-v2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ClassRoster-v2Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B54E02319AD8AB800E690D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B54E02419AD8AB800E690D4 /* ClassRoster_v2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassRoster_v2Tests.swift; sourceTree = "<group>"; };
+		8B54E02E19AD8C4900E690D4 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		8B54E03419AE9CEA00E690D4 /* AddNewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewViewController.swift; sourceTree = "<group>"; };
+		8BC283B319B3E30F006F2FBE /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		8BC283B519B3E520006F2FBE /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +84,11 @@
 			isa = PBXGroup;
 			children = (
 				8B54E00E19AD8AB800E690D4 /* AppDelegate.swift */,
+				8BC283B319B3E30F006F2FBE /* Person.swift */,
+				8B54E03419AE9CEA00E690D4 /* AddNewViewController.swift */,
+				8BC283B519B3E520006F2FBE /* DetailViewController.swift */,
+				8B54E02E19AD8C4900E690D4 /* Main.storyboard */,
 				8B54E01319AD8AB800E690D4 /* ViewController.swift */,
-				8B54E01519AD8AB800E690D4 /* Main.storyboard */,
 				8B54E01819AD8AB800E690D4 /* Images.xcassets */,
 				8B54E01019AD8AB800E690D4 /* ClassRoster_v2.xcdatamodeld */,
 				8B54E00C19AD8AB800E690D4 /* Supporting Files */,
@@ -192,8 +201,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B54E01719AD8AB800E690D4 /* Main.storyboard in Resources */,
 				8B54E01919AD8AB800E690D4 /* Images.xcassets in Resources */,
+				8B54E02F19AD8C4900E690D4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,9 +220,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BC283B419B3E30F006F2FBE /* Person.swift in Sources */,
 				8B54E01419AD8AB800E690D4 /* ViewController.swift in Sources */,
 				8B54E00F19AD8AB800E690D4 /* AppDelegate.swift in Sources */,
+				8BC283B619B3E520006F2FBE /* DetailViewController.swift in Sources */,
 				8B54E01219AD8AB800E690D4 /* ClassRoster_v2.xcdatamodeld in Sources */,
+				8B54E03519AE9CEA00E690D4 /* AddNewViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,17 +246,6 @@
 			targetProxy = 8B54E01F19AD8AB800E690D4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		8B54E01519AD8AB800E690D4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8B54E01619AD8AB800E690D4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		8B54E02619AD8AB800E690D4 /* Debug */ = {
@@ -399,6 +400,7 @@
 				8B54E02A19AD8AB800E690D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8B54E02B19AD8AB800E690D4 /* Build configuration list for PBXNativeTarget "ClassRoster-v2Tests" */ = {
 			isa = XCConfigurationList;
@@ -407,6 +409,7 @@
 				8B54E02D19AD8AB800E690D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
