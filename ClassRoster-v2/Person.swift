@@ -16,8 +16,8 @@ class Person: NSManagedObject {
     @NSManaged var lastName: String
     @NSManaged var username: String?
     @NSManaged var isStudent: Bool
-    @NSManaged var picture: UIImage?
-    @NSManaged var gitHubPicture: UIImage?
+    @NSManaged var picture: NSData?
+    @NSManaged var gitHubPicture: NSData?
     
     convenience init(firstName: String, lastName: String, isStudent: Bool) {
         self.init()
