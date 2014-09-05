@@ -42,14 +42,17 @@ class DetailViewController: UIViewController, UIImagePickerControllerDelegate, U
         if person!.username != nil {
             self.usernameTF.text = person!.username
         }
+        
         if person!.picture != nil {
             self.imageView.image = UIImage(data: person!.picture)
         }
+        
         if person!.isStudent == true {
             roleLabel.text = "Student"
         } else  {
             roleLabel.text = "Teacher"
         }
+        
         if person!.gitHubPicture != nil {
             self.gitImageView.image = UIImage(data: person!.gitHubPicture)
         }
@@ -326,6 +329,8 @@ class DetailViewController: UIViewController, UIImagePickerControllerDelegate, U
                 self.getGitHubImage(username)
                 self.usernameTF.text = username
             } else {
+                self.person!.username = nil
+                self.person!.gitHubPicture = nil
                 println("Add code for empty username here!")
             }
             

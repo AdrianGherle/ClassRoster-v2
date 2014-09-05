@@ -15,6 +15,7 @@ class AddNewViewController: UIViewController, UITextFieldDelegate {
     var firstName: String?
     var lastName: String?
     var role: Bool = true
+    var username: String?
     var delegate: AddNewViewControllerDelegate? = nil
     
     @IBOutlet weak var firstNameTF: UITextField!
@@ -38,27 +39,55 @@ class AddNewViewController: UIViewController, UITextFieldDelegate {
     
     
     @IBAction func saveAction(sender: AnyObject) {
+        
         if delegate! != nil {
             if validateName() {
+                
                 firstName = firstNameTF.text
                 lastName = lastNameTF.text
+                
+                if usernameTF.text != "" {
+                    username = usernameTF.text
+                }
+                
                 delegate!.saveNewPerson(self)
+                
             } else {
+                
 //                requiredLabel.text = "Must complete all required fields"
 //                requiredLabel.textColor = UIColor.redColor()
             }
         }
     }
     
+    
     func validateName() -> Bool {
+        var flag = true
+        
         if firstNameTF.text == "" {
-            return false
-        } else {
-            return true
+            
+            firstNameTF.layer.borderColor = UIColor.redColor().CGColor
+            firstNameTF.layer.borderWidth = 1
+            firstNameTF.layer.cornerRadius = 5
+            flag = false
+            
         }
+        
+        if lastNameTF.text == "" {
+            
+            lastNameTF.layer.borderColor = UIColor.redColor().CGColor
+            lastNameTF.layer.borderWidth = 1
+            lastNameTF.layer.cornerRadius = 5
+            flag = false
+        
+        }
+        return flag
+        
     }
     
+    
     @IBAction func addPhotoBtn(sender: AnyObject) {
+        
     }
     
     

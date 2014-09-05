@@ -191,6 +191,12 @@ class ViewController : UIViewController, UITableViewDataSource, UITableViewDeleg
         newPerson.firstName = controller.firstName!
         newPerson.lastName = controller.lastName!
         newPerson.isStudent = controller.role
+        
+        if controller.username != nil {
+            newPerson.username = controller.username
+        }
+        
+        
         // add rest of properties here
         
         context.save(nil)
